@@ -11,12 +11,7 @@ INSTALL_DIR="${INSTALL_DIR:-/var/www/pdd-test-site}"
 SERVER_IP="${SERVER_IP:-35.254.178.48}"
 SERVER_NAME="${SERVER_NAME:-_}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-if [[ -f "$SCRIPT_DIR/config/config.sample.php" && -d "$SCRIPT_DIR/public" && -d "$SCRIPT_DIR/api" ]]; then
-    PROJECT_DIR="${PROJECT_DIR:-$SCRIPT_DIR}"
-else
-    PROJECT_DIR="${PROJECT_DIR:-$INSTALL_DIR}"
-fi
+PROJECT_DIR="${PROJECT_DIR:-$INSTALL_DIR}"
 
 DB_NAME="${DB_NAME:-pdd_test}"
 DB_USER="${DB_USER:-pdd_user}"
