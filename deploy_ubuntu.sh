@@ -275,15 +275,14 @@ server {
 
     location ~ ^/api/(.+\.php)$ {
         alias ${PROJECT_DIR}/api/\$1;
-        include snippets/fastcgi-php.conf;
         fastcgi_param SCRIPT_FILENAME ${PROJECT_DIR}/api/\$1;
+        include snippets/fastcgi-php.conf;
         fastcgi_pass unix:${PHP_FPM_SOCKET};
     }
 
     location ~ \.php$ {
-        try_files \$uri =404;
-        include snippets/fastcgi-php.conf;
         fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
+        include snippets/fastcgi-php.conf;
         fastcgi_pass unix:${PHP_FPM_SOCKET};
     }
 
