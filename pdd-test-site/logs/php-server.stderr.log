@@ -1,0 +1,31 @@
+[Mon Apr 20 23:59:44 2026] PHP 8.0.22 Development Server (http://127.0.0.1:8081) started
+[Mon Apr 20 23:59:44 2026] 127.0.0.1:59420 Accepted
+[Mon Apr 20 23:59:44 2026] 127.0.0.1:59420 [200]: GET /public/dashboard.php
+[Mon Apr 20 23:59:44 2026] 127.0.0.1:59420 Closing
+[Mon Apr 20 23:59:45 2026] 127.0.0.1:51246 Accepted
+[Mon Apr 20 23:59:45 2026] 127.0.0.1:51246 [404]: GET /favicon.ico - No such file or directory
+[Mon Apr 20 23:59:45 2026] 127.0.0.1:51246 Closing
+[Mon Apr 20 23:59:45 2026] 127.0.0.1:57166 Accepted
+[Mon Apr 20 23:59:46 2026] 127.0.0.1:55319 Accepted
+[Mon Apr 20 23:59:46 2026] 127.0.0.1:57166 [200]: GET /public/dashboard.php
+[Mon Apr 20 23:59:46 2026] 127.0.0.1:57166 Closing
+[Mon Apr 20 23:59:51 2026] 127.0.0.1:60694 Accepted
+[Mon Apr 20 23:59:51 2026] 127.0.0.1:55319 [200]: GET /public/dashboard.php
+[Mon Apr 20 23:59:51 2026] 127.0.0.1:55319 Closing
+[Mon Apr 20 23:59:52 2026] 127.0.0.1:60694 [200]: GET /public/dashboard.php
+[Mon Apr 20 23:59:52 2026] 127.0.0.1:60694 Closing
+[Mon Apr 20 23:59:52 2026] 127.0.0.1:60080 Accepted
+[Mon Apr 20 23:59:53 2026] 127.0.0.1:60080 [200]: GET /public/dashboard.php
+[Mon Apr 20 23:59:53 2026] 127.0.0.1:60080 Closing
+[Mon Apr 20 23:59:53 2026] 127.0.0.1:55132 Accepted
+[Tue Apr 21 00:00:48 2026] 127.0.0.1:57100 Accepted
+[Tue Apr 21 00:00:48 2026] 127.0.0.1:57100 [200]: POST /api/submit_result.php
+[Tue Apr 21 00:00:48 2026] 127.0.0.1:57100 Closing
+[Tue Apr 21 00:00:51 2026] 127.0.0.1:58973 Accepted
+[Tue Apr 21 00:00:51 2026] 127.0.0.1:55132 [200]: GET /public/dashboard.php
+[Tue Apr 21 00:00:51 2026] 127.0.0.1:55132 Closing
+[Tue Apr 21 00:00:51 2026] 127.0.0.1:58973 [404]: GET /favicon.ico - No such file or directory
+[Tue Apr 21 00:00:51 2026] 127.0.0.1:58973 Closing
+[Tue Apr 21 03:04:45 2026] 127.0.0.1:52055 Accepted
+[Tue Apr 21 03:05:46 2026] 127.0.0.1:52055 Closed without sending a request; it was probably just an unused speculative preconnection
+[Tue Apr 21 03:05:46 2026] 127.0.0.1:52055 Closing

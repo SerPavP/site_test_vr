@@ -1,0 +1,4 @@
+[Thu Jun  4 22:22:08 2026] PHP 8.1.9 Development Server (http://127.0.0.1:8015) started
+[Thu Jun  4 22:22:10 2026] 127.0.0.1:50649 Accepted
+[Thu Jun  4 22:22:10 2026] 127.0.0.1:50649 [200]: GET /index.php
+[Thu Jun  4 22:22:10 2026] 127.0.0.1:50649 Closing

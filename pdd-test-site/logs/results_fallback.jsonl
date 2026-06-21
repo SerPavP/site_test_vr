@@ -1,0 +1,4 @@
+{"created_at":"2026-04-17T09:46:11+00:00","name":"TestUser","score":19,"total_questions":20,"percent":95,"passed":true,"ip":"::1","answers":[],"error":"could not find driver"}
+{"created_at":"2026-04-17T10:08:24+00:00","name":"asd","score":8,"total_questions":20,"percent":40,"passed":false,"ip":"::1","answers":[],"error":"could not find driver"}
+{"created_at":"2026-04-17T10:26:10+00:00","name":"asd","score":8,"total_questions":20,"percent":40,"passed":false,"ip":"::1","answers":[],"error":"SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"}
+{"created_at":"2026-04-18T11:44:43+03:00","name":"fds","score":3,"total_questions":20,"percent":15,"passed":false,"ip":"127.0.0.1","answers":[],"error":"SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"}

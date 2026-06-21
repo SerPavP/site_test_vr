@@ -1,0 +1,3 @@
+admin / admin12345
+teacher1 / teacher12345
+http://127.0.0.1:8016/public/install_demo_users.php

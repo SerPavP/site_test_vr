@@ -1,0 +1,5 @@
+& 'C:\OSPanel\modules\php\PHP_8.1\php.exe' -S 127.0.0.1:8016
+
+http://127.0.0.1:8016/public/index.php
+
+.\run-local.ps1

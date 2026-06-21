@@ -1,0 +1,5 @@
+{"created_at":"2026-04-17T09:46:11+00:00","name":"TestUser","score":19,"total_questions":20,"percent":95,"passed":true,"ip":"::1","answers":[],"error":"could not find driver"}
+{"created_at":"2026-04-17T10:08:24+00:00","name":"asd","score":8,"total_questions":20,"percent":40,"passed":false,"ip":"::1","answers":[],"error":"could not find driver"}
+{"created_at":"2026-04-17T10:26:10+00:00","name":"asd","score":8,"total_questions":20,"percent":40,"passed":false,"ip":"::1","answers":[],"error":"SQLSTATE[HY000] [2002] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение"}
+{"created_at":"2026-05-27T10:26:42+00:00","name":"UnityCheck","score":17,"total_questions":20,"percent":85,"passed":false,"ip":"::1","answers":[{"question_id":1,"is_correct":false}],"error":"SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)"}
+{"created_at":"2026-05-27T10:29:39+00:00","name":"123","score":2,"total_questions":20,"percent":10,"passed":false,"ip":"::1","answers":[],"error":"SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)"}
