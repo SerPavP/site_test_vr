@@ -270,19 +270,21 @@ server {
 
     location /api/ {
         alias ${PROJECT_DIR}/api/;
-        try_files \$uri =404;
+        index index.php;
     }
 
     location ~ ^/api/(.+\.php)$ {
-        alias ${PROJECT_DIR}/api/\$1;
+        include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME ${PROJECT_DIR}/api/\$1;
-        include snippets/fastcgi-php.conf;
+        fastcgi_param SCRIPT_NAME /api/\$1;
+        fastcgi_param DOCUMENT_ROOT ${PROJECT_DIR}/api;
         fastcgi_pass unix:${PHP_FPM_SOCKET};
     }
 
     location ~ \.php$ {
+        include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
-        include snippets/fastcgi-php.conf;
+        fastcgi_param DOCUMENT_ROOT \$document_root;
         fastcgi_pass unix:${PHP_FPM_SOCKET};
     }
 
