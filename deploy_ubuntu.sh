@@ -138,7 +138,7 @@ detect_php_runtime() {
 
     PHP_FPM_SERVICE="$(
         systemctl list-unit-files --type=service --no-legend \
-            | awk '/^php[0-9]+\.[0-9]+-fpm\.service/ {print $1}'
+            | awk '/^php[0-9]+\.[0-9]+-fpm\.service/ {print $1}' \
             | head -n 1
     )"
     [[ -n "$PHP_FPM_SERVICE" ]] || fail "Could not detect php-fpm systemd service."
