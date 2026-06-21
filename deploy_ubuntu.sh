@@ -49,10 +49,12 @@ as_user() {
     local user="$1"
     shift
 
-    if [[ "$(id -u)" -eq 0 ]]; then
+    if command -v sudo >/dev/null 2>&1; then
+        sudo -u "$user" "$@"
+    elif [[ "$(id -u)" -eq 0 ]]; then
         runuser -u "$user" -- "$@"
     else
-        sudo -u "$user" "$@"
+        fail "Neither sudo nor root runuser execution is available for user switching."
     fi
 }
 
