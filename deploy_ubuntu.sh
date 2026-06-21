@@ -45,6 +45,17 @@ else
     SUDO="sudo"
 fi
 
+as_user() {
+    local user="$1"
+    shift
+
+    if [[ "$(id -u)" -eq 0 ]]; then
+        runuser -u "$user" -- "$@"
+    else
+        sudo -u "$user" "$@"
+    fi
+}
+
 info() {
     printf '\033[0;34m[INFO]\033[0m %s\n' "$1"
 }
@@ -226,7 +237,7 @@ write_config_file() {
 
 seed_demo_users() {
     info "Installing demo users through application bootstrap"
-    $SUDO -u "$APP_USER" "$PHP_BIN" -r '
+    as_user "$APP_USER" "$PHP_BIN" -r '
         chdir($argv[1]);
         require $argv[2];
         installDemoAccounts();
