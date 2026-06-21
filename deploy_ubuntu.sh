@@ -99,7 +99,7 @@ reset_runtime_files_before_pull() {
 install_system_packages() {
     info "Installing Debian packages"
     $SUDO apt-get update
-    $SUDO DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    $SUDO env DEBIAN_FRONTEND=noninteractive apt-get install -y \
         nginx \
         mariadb-server \
         php-fpm \
